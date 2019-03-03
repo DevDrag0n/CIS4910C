@@ -57,6 +57,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="479,713.4,0,0" Grid.Row="1" Text="Skills: Duis et molestie velit, id feugiat felis. Etiam consequat elit varius lectus vehicula, a gravida libero hendrerit." TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="254" Foreground="#FF0F0D0D"/>
         <TextBlock HorizontalAlignment="Left" Margin="479,632.4,0,0" Grid.Row="1" Text="Age: 24" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="79" Foreground="#FF180F0F"/>
         <TextBlock HorizontalAlignment="Left" Margin="456,320.4,0,0" Grid.Row="1" Text="Quisque venenatis lectus enim, sollicitudin porta augue porta ut. Mauris vehicula molestie nisi, a accumsan nisl dignissim in. Cras consequat diam neque, eu consectetur sapien rhoncus placerat." TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="543" Foreground="#FF0E0606"/>
+        <TextBlock HorizontalAlignment="Left" Text="Contact: developer@provider.com" TextWrapping="Wrap" VerticalAlignment="Top" Margin="470,600.4,0,0" Grid.Row="1" Foreground="#FF060404"/>
 
 
 
