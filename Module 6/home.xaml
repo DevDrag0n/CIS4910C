@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="CIS4910C_Application.home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CIS4910C_Application"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF1BACAF">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="481*"/>
+        </Grid.RowDefinitions>
+        <SplitView x:Name="MySplitview"  DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" FontFamily="Segoe MDL2 Assets" FontSize="14" Grid.RowSpan="2">
+            <SplitView.Pane>
+
+
+                <StackPanel Background="Gray" >
+                    <Button x:Name="btnShowPane" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;"  Height="50" VerticalAlignment="Center" Width="50" Background="Transparent" Click="btnShowPane_Click"/>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Home" FontFamily="Segoe MDL2 Assets" Content="&#xEA8A;"  Height="50" VerticalAlignment="Center" Width="50" Click="btnhome_Click"/>
+                        <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="19.6,0,0.2,0" FontFamily="Segoe UI Light"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Archive" FontFamily="Segoe MDL2 Assets" Content="&#xE82D;"  Height="50" VerticalAlignment="Center" Width="50" Background="Transparent" Click="btnArchive_Click"/>
+                        <TextBlock Text="Archive" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="19.6,0,0.2,0" FontFamily="Segoe UI Light"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="AboutBtn" FontFamily="Segoe MDL2 Assets" Content="&#xE716;"  Height="50" VerticalAlignment="Center" Width="50" Click="btnAbout_Click" Background="Transparent"/>
+                        <TextBlock Text="About" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="19.6,0,0.2,0" FontFamily="Segoe UI Light"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Signout" FontFamily="Segoe MDL2 Assets" Content="&#xE7E8;"  Height="50" VerticalAlignment="Center" Width="50" Click="btnLogout_Click" Background="Transparent"/>
+                        <TextBlock Text="Sign Out" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="19.6,0,0.2,0" FontFamily="Segoe UI Light"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </SplitView.Pane>
+
+
+        </SplitView>
+        <Rectangle HorizontalAlignment="Left" Height="249" VerticalAlignment="Top" Width="446" Margin="859,503.4,0,0" Grid.Row="1" Fill="#FFF6F3F3"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Text="Anouncements:" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Margin="1031,533.4,0,0" Grid.Row="1" Foreground="#FF0B0909" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Text="Lorem ipsum dolor sit amet." TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="886,591.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="20" Text="Nunc in dictum turpis, sit amet aliquet felis." TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="886,637.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="20" Text="Cras viverra posuere enim id aliquet." TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="886,684.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+
+        <Rectangle HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="446" Margin="562,186.4,0,0" Grid.Row="1" Fill="#FFF6F3F3"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Text="Getting Started" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Margin="721,210.4,0,0" Grid.Row="1" Foreground="#FF0B0909" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Text="To begin storing information, go to the archive section in navigation." TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="615,260.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="49" Text="Sorting options can be found above the table on the archive page." TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="615,323.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="49" Text="The highlighted icon in navigation shows the current page." TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="615,391.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+
+
+
+
+
+
+
+        <Rectangle HorizontalAlignment="Left" Height="249" VerticalAlignment="Top" Width="347" Margin="371,503.4,0,0" Grid.Row="1" Fill="#FFF6F2F2" />
+
+        <TextBlock HorizontalAlignment="Left" Height="26" Text="Changelog V1.0.1: " TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Margin="486,538.4,0,0" Grid.Row="1" Foreground="#FF0B0909" FontWeight="Bold"/>
+
+
+        <Image HorizontalAlignment="Left" Height="169" Margin="1326,11,0,0" VerticalAlignment="Top" Width="163" Source="/Assets/App Icon.png" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="69" Text="Welcome to Avid Reader Archive" TextWrapping="Wrap" VerticalAlignment="Top" Width="584" FontSize="36" Margin="509,55.4,0,0" Grid.Row="1" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Text="Lorem ipsum dolor sit amet." TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="452,580.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="29" Text="Fusce eget pulvinar diam." TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="452,617.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+        <TextBlock HorizontalAlignment="Left" Height="58" Text="Nam molestie, elit eget dapibus tempor, tortor nibh auctor dolor." TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Margin="454,653.4,0,0" Grid.Row="1" Foreground="#FF0E0C0C" />
+
+
+
+
+
+
+    </Grid>
+</Page>
